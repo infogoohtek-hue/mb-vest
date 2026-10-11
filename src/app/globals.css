@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Cinzel:wght@500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * =====================================================================
+ * AGENCY UX/UI PRO MAX DESIGN TOKENS (LORA CONTEMPORARY SERIF)
+ * =====================================================================
+ */
+:root {
+  /* --- 1. LORA SERIF TYPOGRAPHY STACK (Vietnamese Subsets) --- */
+  --font-sans: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* --- 2. OBSIDIAN & CHAMPAGNE COLOR PALETTE --- */
+  --color-primary: #121212;
+  --color-primary-hover: #000000;
+  --color-primary-light: #262626;
+
+  /* Surfaces & Backgrounds */
+  --color-surface-white: #ffffff;
+  --color-surface-sand: #f7f5f0;
+  --color-surface-subtle: #f9f9f9;
+  --color-surface-dark: #141414;
+  --color-charcoal: #1a1a1a;
+
+  /* Accents */
+  --color-accent-gold: #c5a880;
+  --color-accent-gold-light: #e6c987;
+  --color-accent-emerald: #135e1b;
+  --color-accent-emerald-light: #2e7d32;
+
+  /* Typography Text Colors */
+  --color-text-primary: #171717;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #737373;
+  --color-text-light: #f5f5f5;
+
+  /* Borders & Outlines */
+  --color-border: #e5e5e5;
+  --color-border-subtle: #f0f0f0;
+  --color-border-dark: #2e2e2e;
+
+  /* Status Colors */
+  --color-sale: #dc2626;
+  --color-sale-bg: #fef2f2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-sans), 'Lora', Georgia, serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-heading), 'Lora', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.font-serif {
+  font-family: var(--font-heading), 'Lora', serif;
+  font-weight: 400;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+.font-sans {
+  font-family: var(--font-sans), 'Lora', serif;
+}
+
+/* Custom Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale-up {
+  animation: scaleUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes subtlePulseGlow {
+  0%, 100% {
+    transform: scale(1) translateZ(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.15) translateZ(0);
+    opacity: 0.15;
+  }
+}
+
+.animate-pulse-glow {
+  will-change: transform, opacity;
+  animation: subtlePulseGlow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-ken-burns {
+  animation: kenBurns 20s infinite alternate ease-in-out;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
