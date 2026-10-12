@@ -16,7 +16,7 @@ const CATEGORIES = [
   {
     title: "BỘ SUIT 2 MẢNH",
     subtitle: "GIÁ TỪ 2.500.000 VNĐ",
-    image: "/images/pruducts/2_manh.png",
+    image: "/images/pruducts/nau.jpg",
     href: "/collections/suit-2-manh",
     colSpan: "col-span-12 md:col-span-4",
     aspect: "aspect-[4/5]",
@@ -24,7 +24,7 @@ const CATEGORIES = [
   {
     title: "BỘ SUIT 3 MẢNH",
     subtitle: "GIÁ TỪ 3.300.000 VNĐ",
-    image: "/images/pruducts/xanh_navy.jpg",
+    image: "/images/pruducts/mau_be.png",
     href: "/collections/suit-3-manh",
     colSpan: "col-span-12 md:col-span-4",
     aspect: "aspect-[4/5]",

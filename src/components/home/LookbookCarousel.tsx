@@ -16,9 +16,10 @@ const LOOKBOOK_ITEMS = [
   },
   {
     id: 2,
-    title: "Double-Breasted Chocolate",
-    subtitle: "Tuxedo & Royal Wedding",
-    image: "/images/man_vest/image_2.png",
+    title: "Classic Black Wedding Suit",
+    subtitle: "Timeless Wedding Style",
+    image: "/images/man_vest/image_3.png",
+    objectPosition: "object-top",
     link: "/collections/dich-vu",
     tag: "SUIT CƯỚI",
   },

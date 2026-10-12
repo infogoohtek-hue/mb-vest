@@ -28,7 +28,7 @@ const SERVICES = [
     priceText: "Từ 2.500.000đ",
     structure: "Cấu tạo: Gồm 1 Áo Vest + 1 Quần âu đồng bộ",
     description: "Bộ trang phục chuẩn mực lịch lãm cho công sở, gặp gỡ đối tác và các sự kiện quan trọng. Sự kết hợp đồng bộ hoàn hảo giữa áo vest và quần âu cùng chất liệu.",
-    image: "/images/pruducts/2_manh.png",
+    image: "/images/pruducts/nau.jpg",
     features: [
       "Bao gồm 1 Áo Vest (Jacket) & 1 Quần âu đồng bộ",
       "Chi phí khởi điểm từ 2.500.000đ",
@@ -43,7 +43,7 @@ const SERVICES = [
     priceText: "Từ 3.300.000đ",
     structure: "Cấu tạo: Gồm 1 Áo Vest + 1 Áo Gile (Waistcoat) + 1 Quần âu đồng bộ",
     description: "Đỉnh cao của sự sang trọng và đẳng cấp (Sartorial). Cấu trúc 3 mảnh tôn lên vóc dáng uy nghi, đặc biệt hoàn hảo cho chú rể trong ngày cưới hoặc các buổi tiệc VIP.",
-    image: "/images/pruducts/xanh_navy.jpg",
+    image: "/images/pruducts/mau_be.png",
     features: [
       "Bao gồm 1 Áo Vest + 1 Áo Gile (Waistcoat) + 1 Quần âu",
       "Chi phí khởi điểm từ 3.300.000đ",
